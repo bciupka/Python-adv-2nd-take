@@ -1,0 +1,19 @@
+#coding=windows-1250
+colors = ["red", "orange", "green", "violet", "blue", "yellow"]
+
+def colorChooser(amount, list):
+    colors = list[:amount]
+    return colors
+
+for i in range(1, len(colors)+1):
+    print(colorChooser(i, colors))
+
+
+korpo = '''
+Korporacja (z ³ac. corpo – cia³o, ratus – szczur; pol. cia³o szczura) – organizacja,
+która pod przykrywk¹ prowadzenia biznesu w³ada dzisiejszym œwiatem. Wydawaæ siê mo¿e utopijnym miejscem
+realizacji pasji zawodowych. W rzeczywistoœci jednak nie jest wcale tak kolorowo. Korporacja s³u¿y do
+wyzyskiwania cz³owieka w imiê postêpu. Rz¹dzi w niej prawo d¿ungli.
+'''
+
+print(korpo[korpo.index("(")+1:korpo.index(")")])
